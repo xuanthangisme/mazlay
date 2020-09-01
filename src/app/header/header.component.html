@@ -462,6 +462,24 @@
                             <div class="main_menu menu_position text-left"> 
                                 <nav>  
                                     <ul>
+                                        <!-- <ng-container *ngFor="let mn of menus; let i=index">
+                                            <li *ngIf="mn.child==null" class="nav-item" [ngClass]="{'active':i==0}">
+                                                <a  [ngStyle]="{'color':mn.disabled==true ? 'red' : '' }"  [ngClass]="{'disabled':mn.disabled == true}" class="nav-link" href="#">{{mn.name}} 
+                                                    <span class="sr-only">(current)</span>
+                                                </a>
+                                            </li>
+                                            <li *ngIf="mn.child!=null" class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                 {{name.mn}}
+                                                </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div>
+                                            <ng-container *ngFor="let m of mn.child">
+                                                <a *ngIf="m.name!='-'" class="dropdown-item" [href]="m.url">{{m.name}}</a>
+                                            <div *ngIf="m.name=='-'" class="dropdown-divider"></div>
+                                            </ng-container>  
+                                            </div>
+                                            </li>
+                                            </ng-container>  -->
                                         <li><a class="active"  href="index.html">home<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu">
                                                 <li><a href="index.html">Home shop 1</a></li>
